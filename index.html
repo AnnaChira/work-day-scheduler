@@ -44,9 +44,10 @@
             "Friday",
         ];
         var times = "";
-        if (times !=== true){
-            
+        if (times !== true){
+          var times = document.createElement("p");
         }
+        if (times !== false)
 
         days.forEach(function(create){
             var days = document.createElement("div");
@@ -55,7 +56,9 @@
         });
     });
 
-   
+   function init(){
+     var storeDates = JSON.parse(localStorage.getItem("days"));
+   }
     
 
     </script>
