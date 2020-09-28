@@ -29,41 +29,59 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
-      <!-- Timeblocks go here -->
+    <table id="scheduler">
+      <tr class="row">
+       <td>9:00 am</td>
+       <td class="description"><textarea></textarea></td>
+       <td><button class="saveBtn">Save</button></td> 
+      </tr>
+      <tr class="row">
+        <td class="hour">10:00 am</td>
+        <td class="description">Event</td>
+        <td><button class="saveBtn">Save</button></td> 
+       </tr>
+       <tr class="row">
+        <td class="hour">11:00 am</td>
+        <td class="description">Event</td>
+        <td><button class="saveBtn">Save</button></td>
+       </tr>
+       <tr class="row">
+        <td class="hour">12:00 pm</td>
+        <td class="description">Event</td>
+        <td><button class="saveBtn"></button>Save</td> 
+       </tr>
+       <tr class="row">
+        <td class="hour">1:00 pm</td>
+        <td class="description">Event</td>
+        <td><button class="saveBtn"></button>Save</td>  
+       </tr>
+       <tr class="row">
+        <td class="hour">2:00 pm</td>
+        <td class="description">Event</td>
+        <td><button class="saveBtn"></button>Save</td> 
+       </tr>
+       <tr class="row">
+        <td class="hour">3:00 pm</td>
+        <td class="description">Event</td>
+        <td><button class="saveBtn"></button>Save</td>  
+       </tr>
+       <tr class="row">
+        <td class="hour">4:00 pm</td>
+        <td class="description">Event</td>
+        <td><button class="saveBtn"></button>Save</td>  
+       </tr>
+       <tr class="row">
+        <td class="hour">5:00 pm</td>
+        <td class="description">Event</td>
+        <td><button class="saveBtn"></button>Save</td>  
+       </tr>
+ 
+    </table>
     </div>
 
-    <script type = "text/javascript">
-
-    $(document).on("click", function(){
-        var workScheduler = document.getElementById("jumbotron");
-        var days = [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-        ];
-        var times = "";
-        if (times !== true){
-          var times = document.createElement("p");
-        }
-        if (times !== false)
-
-        days.forEach(function(create){
-            var days = document.createElement("div");
-            newDaysDiv.textContent = event;
-            days.appendChild(newDaysDiv);
-        });
-    });
-
-   function init(){
-     var storeDates = JSON.parse(localStorage.getItem("days"));
-   }
-    
-
-    </script>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
