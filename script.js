@@ -16,6 +16,11 @@ var saveBtn = $("#button").bind("click", function(){
     storeDates.addEventlister 
 });
 
+$("#past").children();
+row.on("click", function(){
+    addEvent.getElementById("present");
+})
+
 function init(){
     var storeDates = JSON.parse(localStorage.getItem("description"));
 }
