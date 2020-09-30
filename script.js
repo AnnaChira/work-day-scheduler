@@ -1,29 +1,34 @@
 
+var currentDay = new Date();
+console.log(currentDay);
+document.write(currentDay);
+
+
+
+
 var textArea = $("#scheduler").children("tbody").children();
-row.on("click", function(){
-    console.log(this);
-    var description = $(this).find(".description");
-    var description = document.getElementById("description");
-    addEvent(description, 'imput', updateDescription);
+$(".description").on("click", function(){
+    var comment = $(this).val();
+    console.log($(this).parent().attr("id"))
+    var hour = $(this).parent().attr("id");
+    console.log(comment);
+    localStorage.setItem(hour, comment);
 
-    //console.log(description);
 });
+// var input = $
+// var updateDescription = "<p> input </p>";
+// updateDescription.innerHTML = input;
 
-var updateDescription = "<p> imput </p>";
-updateDescription.innerHTML = imput;
+// var saveBtn = $("#button").bind("click", function(){
+//     storeDates.addEventlister 
+// });
 
-var saveBtn = $("#button").bind("click", function(){
-    storeDates.addEventlister 
-});
+// $("#past").children();
+// //row.on("click", function(){
+//     addEvent.getElementById("present");
+    
+// })
 
-$("#past").children();
-row.on("click", function(){
-    addEvent.getElementById("present");
-})
-
-function init(){
-    var storeDates = JSON.parse(localStorage.getItem("description"));
-}
 
 
 
