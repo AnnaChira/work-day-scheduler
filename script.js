@@ -1,9 +1,6 @@
 
-var currentDay = new Date();
-console.log(currentDay);
-document.write(currentDay);
-
-
+var currentDateInfo = (moment().format('LLLL'));
+$("#currentDay").append(currentDateInfo);
 
 
 var textArea = $("#scheduler").children("tbody").children();
@@ -13,21 +10,14 @@ $(".description").on("click", function(){
     var hour = $(this).parent().attr("id");
     console.log(comment);
     localStorage.setItem(hour, comment);
+    $("#textArea").append(textArea);
 
 });
-// var input = $
-// var updateDescription = "<p> input </p>";
-// updateDescription.innerHTML = input;
 
-// var saveBtn = $("#button").bind("click", function(){
-//     storeDates.addEventlister 
-// });
-
-// $("#past").children();
-// //row.on("click", function(){
-//     addEvent.getElementById("present");
-    
-// })
+("#past").children();
+row.on("click", function(){
+addEvent.getElementById("present");
+});
 
 
 
