@@ -14,10 +14,9 @@ $(".description").on("click", function(){
 
 });
 
-var hourofDay = ["09", "10", "11", "12", "01", "02", "03", "04", "o5"]
-updatetime();
+var hourofDay = ["09", "10", "11", "12", "01", "02", "03", "04", "05"]
 
-function updatetime() {
+function hourofDay() {
     var present = moment().format('H');
     for (var i = 0; i < hourofDay.length; i++){
 
