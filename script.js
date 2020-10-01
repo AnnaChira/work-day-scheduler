@@ -14,10 +14,24 @@ $(".description").on("click", function(){
 
 });
 
-("#past").children();
-row.on("click", function(){
-addEvent.getElementById("present");
-});
+var hourofDay = ["09", "10", "11", "12", "01", "02", "03", "04", "o5"]
+updatetime();
+
+function updatetime() {
+    var present = moment().format('H');
+    for (var i = 0; i < hourofDay.length; i++){
+
+        if(parseInt(hourofDay[i]) > present){
+            $("#" + hourofDay[i].attr("style", "background-color: #77dd77"));
+        }
+        else if (parseInt(hourofDay[i]) < present){
+            $("#" + hourofDay[i].attr("style", "background-color: #d3d3d3"));
+        }
+        else if (parseInt(hourofDay[i]) == present){
+            $("#" + hourofDay[i].attr("style", "background-color: #ff6961"));
+        }
+    }
+}
 
 
 
